@@ -1,0 +1,174 @@
+.secao-servicos {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+}
+
+.secao-servicos h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    margin: 60px auto 25px auto;
+}
+
+.secao-servicos p {
+    max-width: 800px;
+}
+
+
+.paragrafo-destaque {
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(90, 88, 88);
+}
+
+b {
+    color: rgb(52, 114, 206);
+}
+
+.caixa-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.card {
+    cursor: pointer;
+    height: 400px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Quando o mouse estiver sobre o .card */
+.card:hover {
+    box-shadow: 1px 10px 20px 5px #d4cfcf;
+    background-color: rgba(229, 238, 238, 0.342);
+}
+
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+
+
+.card h2 {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: rgb(90, 88, 88);
+    margin: 0 10px 15px;
+}
+
+.card span {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.card ul {
+    padding-left: 5px;
+    margin: 0;
+    list-style-position: inside;
+    box-sizing: border-box;
+}
+
+.card li {
+    margin: 10px;
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+}
+
+.nossos-servicos-fundo-preto {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+
+.nossos-servicos-fundo-preto h3 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 5rem auto 1rem;
+}
+
+.nossos-servicos-fundo-preto p {
+    text-align: center;
+    color: #fff;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+
+}
+
+.conteudo-fundo-preto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.conteudo-fundo-preto figure {
+    width: 90%;
+    height: 280px;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.conteudo-fundo-preto img {
+    border-radius: 5px;
+    height: 270px;
+    width: 100%;
+    margin: auto 0;
+    object-fit: cover;
+}
+
+
+@media (max-width: 900px) {
+    .caixa-cards {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colunas */
+    }
+}
+
+@media (max-width: 600px) {
+    .caixa-cards {
+        grid-template-columns: 1fr;
+        /* 1 coluna */
+    }
+
+    .carrossel-container {
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .carrossel {
+        display: flex;
+        gap: 10px;
+        width: fit-content;
+    }
+
+    .carrossel img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        scroll-snap-align: start;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+}

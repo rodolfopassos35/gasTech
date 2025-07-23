@@ -1,0 +1,141 @@
+.secao-diferenciais {
+    height: auto;
+    width: 100%;
+    background-color: rgba(247, 255, 255, 0.342);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cabecalho-diferenciais {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.cabecalho-diferenciais h4 {
+    font-size: clamp(1.7rem, 5vw, 3.5rem);
+    margin-bottom: 10px;
+}
+
+.cabecalho-diferenciais p {
+    max-width: 880px;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    padding: 5px;
+}
+
+.agrupa-cards-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cards-diferenciais {
+    box-shadow: 0 0 5px rgb(133, 134, 133);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    height: 190px;
+}
+
+i {
+    font-size: 20px;
+    color: #175cf0;
+}
+
+.numero {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+}
+
+.agrupa2cards {
+    display: flex;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.cards-inferiores {
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(105, 105, 105, 0.479);
+    margin: 3rem auto;
+}
+
+.cards-inferiores img {
+    margin: 10px;
+}
+
+.agrupa-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards-inferiores span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 8px;
+
+}
+
+.cards-inferiores p {
+    font-size: 1.1rem;
+}
+
+@media(max-width: 600px) {
+    .agrupa-cards-diferenciais {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .agrupa2cards {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .cards-diferenciais {
+        width: 100%;
+        min-width: 320px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .cards-inferiores {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .cards-inferiores img {
+        width: 80%;
+        height: auto;
+    }
+
+    .agrupa-texto {
+        align-items: center;
+    }
+
+}

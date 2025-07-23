@@ -1,0 +1,291 @@
+/* .roda-pe {
+    background-color: #000;
+}
+
+.conteudo-roda-pe {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo-roda-pe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+    height: 220px;
+}
+
+.titulo-roda-pe h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 30px;
+}
+
+.titulo-roda-pe p {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.agrupa-links-navegacao {
+    border: 2px solid red;
+}
+
+.links-navegacao-roda-pe {
+    width: max-content;
+    height: 220px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-navegacao-roda-pe a {
+    background: none;
+    color: #fff;
+}
+
+.links-navegacao-roda-pe ul li {
+    margin: 30px;
+}
+
+.agrupa-links-redes-sociais {
+    width: 300px;
+}
+
+.redes-sociais-roda-pe {
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais-roda-pe a {
+    text-decoration: none;
+}
+
+.redes-sociais-roda-pe i {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.redes-sociais-roda-pe i:hover {
+    color: #0d3ca0;
+}
+
+.ecopy {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ecopy p {
+    color: #fff;
+}
+
+.ecopy::before {
+    content: "";
+    display: inline-block;
+    width: 85%;
+    height: 1px;
+    background-color: #fff;
+    margin: 20px auto;
+    position: absolute;
+    bottom: 50px;
+}
+
+@media (max-width: 600px) {
+    .conteudo-roda-pe {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .titulo-roda-pe {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .titulo-roda-pe h1 {
+        font-size: 2.5rem;
+        margin: 20px 0 10px;
+    }
+
+    .titulo-roda-pe p {
+        font-size: 1.1rem;
+    }
+
+    .agrupa-links-navegacao {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .links-navegacao-roda-pe {
+        align-items: center;
+        height: auto;
+        border: 2px solid rebeccapurple;
+    }
+
+    .links-navegacao-roda-pe ul {
+        padding: 0;
+    }
+
+    .links-navegacao-roda-pe ul li {
+        margin: 10px 0;
+    }
+
+    .agrupa-links-redes-sociais {
+        width: 100%;
+        text-align: center;
+    }
+
+    .redes-sociais-roda-pe {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .ecopy {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ecopy::before {
+        width: 90%;
+    }
+} */
+/* Base Mobile */
+.roda-pe {
+    background-color: #000;
+    padding: 30px 15px;
+    color: #fff;
+}
+
+.conteudo-roda-pe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.titulo-roda-pe h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.titulo-roda-pe p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+.links-navegacao-roda-pe ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-navegacao-roda-pe li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.links-navegacao-roda-pe a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    background: none;
+}
+
+.links-navegacao-roda-pe a:hover {
+    color: #0d3ca0;
+}
+
+.agrupa-links-redes-sociais {
+    display: flex;
+    width: 300px;
+    height: 100px;
+}
+
+.redes-sociais-roda-pe {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.redes-sociais-roda-pe a i {
+    margin-left: 50px;
+}
+
+.redes-sociais-roda-pe a {
+    text-decoration: none;
+}
+
+.redes-sociais-roda-pe i {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.redes-sociais-roda-pe i:hover {
+    color: #0d3ca0;
+}
+
+.ecopy {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ecopy p {
+    font-size: 1rem;
+}
+
+.ecopy::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 auto 15px;
+}
+
+/* Estilo para tablets e desktops */
+@media (min-width: 768px) {
+    .conteudo-roda-pe {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .titulo-roda-pe,
+    .agrupa-links-navegacao,
+    .agrupa-links-redes-sociais {
+        width: 30%;
+    }
+
+    .redes-sociais-roda-pe {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .ecopy {
+        padding: 10px 0;
+    }
+
+    .ecopy::before {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+}
