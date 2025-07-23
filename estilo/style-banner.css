@@ -18,7 +18,7 @@
 
 .secao-banner {
     position: relative;
-    background-image: url('assets/central-gas-tech.png');
+    background-image: url('/assets/central-gas-tech.png');
     background-position: center;
     background-size: 100% 100vh;
     background-repeat: no-repeat;
