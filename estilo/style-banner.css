@@ -19,7 +19,7 @@
 
 .secao-banner {
     position: relative;
-    background-image: url('/assets/Copilot_20250724_101141.png');
+    background-image: url('../assets/Copilot_20250724_101141.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
