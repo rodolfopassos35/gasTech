@@ -94,7 +94,6 @@
     margin: 0 auto 15px;
 }
 
-/* Estilo para tablets e desktops */
 @media (min-width: 768px) {
     .conteudo-roda-pe {
         flex-direction: row;

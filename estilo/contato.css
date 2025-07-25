@@ -1,6 +1,6 @@
 .contato {
     height: 60vh;
-    background: url('../assets/gas-9426301_640.jpg');
+    background-image: url('/assets/gas-9426301_640.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +21,7 @@
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 10px;
     text-align: center;
+    padding: 0 5px;
 }
 
 .conteudo-contato p {
@@ -29,4 +30,10 @@
     margin-bottom: 40px;
     padding: 5px;
     width: 90%;
+}
+
+@media(max-width:600px) {
+    .contato {
+        margin-top: 3rem;
+    }
 }
