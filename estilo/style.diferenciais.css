@@ -19,6 +19,7 @@
 .cabecalho-diferenciais h4 {
     font-size: clamp(1.7rem, 5vw, 3.5rem);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .cabecalho-diferenciais p {
