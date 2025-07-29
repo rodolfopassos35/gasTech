@@ -7,7 +7,7 @@ let itemWidth;
 
 window.addEventListener('load', () => {
     itemWidth = imagens[0].offsetWidth + 10;
-    atualizarCarrossel(); // garante posicionamento inicial correto
+    atualizarCarrossel();
 });
 
 let index = 0;
@@ -32,11 +32,14 @@ imagens.forEach((_, i) => {
 });
 
 function atualizarCarrossel() {
-    carrossel.style.transform = `translateX(-${index * itemWidth}px)`;
+    const limiteMax = (imagens.length - 3) * itemWidth;
+    carrossel.style.transform = `translateX(-${Math.min(index * itemWidth, limiteMax)}px)`;
+
     document.querySelectorAll('.paginador').forEach((p, i) => {
         p.classList.toggle('ativo', i === index);
     });
 }
+
 
 // Responsividade ao redimensionar
 window.addEventListener('resize', () => {

@@ -32,6 +32,21 @@
     width: 90%;
 }
 
+.conteudo-contato button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo-contato button:hover {
+    background-color: #e03e00;
+}
+
 @media(max-width:600px) {
     .contato {
         margin-top: 3rem;
