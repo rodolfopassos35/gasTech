@@ -105,7 +105,7 @@ b {
     text-align: center;
     color: #fff;
     font-size: clamp(1.2rem, 3vw, 1.4rem);
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
 
 }
@@ -118,10 +118,10 @@ b {
 }
 
 .conteudo-fundo-preto figure {
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 5rem auto;
-    gap: 10px;
+    gap: 5px;
 }
 
 .carrossel-wrapper {
@@ -133,6 +133,9 @@ b {
 
 .carrossel-container {
     overflow: hidden;
+    touch-action: pan-y;
+    width: 99%;
+    margin: 0 auto;
 }
 
 .carrossel {
@@ -188,6 +191,7 @@ b {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    display: none;
 }
 
 .paginador {
@@ -218,6 +222,10 @@ b {
 
     .carrossel img {
         max-width: 80vw;
-        height: auto;
+        height: 250px;
+    }
+
+    .paginadores {
+        display: flex;
     }
 }
