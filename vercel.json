@@ -4,11 +4,6 @@
       "source": "/sitemap.xml",
       "destination": "https://gastechservicos.com.br/sitemap.xml",
       "statusCode": 301
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "https://gastechservicos.com.br/robots.txt",
-      "statusCode": 301
     }
   ]
 }
