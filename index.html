@@ -49,17 +49,22 @@
 
 <body>
     <section class="secao-banner" id="home">
-        <img src="assets/imagem-banner.png" alt="Banner Gás Tech" />
+        <picture>
+            <source media="(max-width: 768px)" srcset="assets/imagem-celulares.png">
+            <img src="assets/imagem-banner-1.webp" loading="lazy" alt="Banner Gás Tech" />
+        </picture>
         <div class="efeito-overlay"></div>
         <header class="topo">
             <div class="logo">
-                <img src="assets/logo-gasTech.png" alt="Logo Gás Tech" />
+                <img src="assets/logo-gasTech.png" loading="lazy"
+                    alt="Logotipo da Gás Tech com chama azul estilizada" />
             </div>
             <div class="links-topo">
                 <nav>
                     <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/5519994461397" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5519986005315?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento.%20Pode%20me%20passar%20mais%20informações%3F"
+                        target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </nav>
@@ -76,9 +81,25 @@
             <h1>Instalação e Manutenção de Gás com Segurança</h1>
             <p>Especialistas em sistemas de gás para residências e comércios. Atendimento 24h em Campinas e região com
                 certificação e garantia total.</p>
-            <a href="https://wa.me/5519994461397" target="_blank">
+            <a href="https://wa.me/5519986005315?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento.%20Pode%20me%20passar%20mais%20informações%3F"
+                target="_blank">
                 <button>Faça um orçamento gratuito</button>
             </a>
+            <div id="mensagem-automatica" class="popup-mensagem">
+                <div class="popup-conteudo">
+                    <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
+                    <div>
+                        <p><strong>Olá!</strong> 👋 Precisa de instalação ou manutenção de gás? A Gás Tech está pronta
+                            para te atender!</p>
+                        <a href="https://wa.me/5519986005315?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento.%20Pode%20me%20passar%20mais%20informações%3F"
+                            target="_blank">
+                            <button>Falar com um especialista</button>
+                        </a>
+                    </div>
+                    <span id="fechar-popup">×</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -91,7 +112,8 @@
                 eficiência energética.</p>
             <div class="caixa-cards">
                 <div class="card">
-                    <img src="assets/logo-casa.png" alt="icon de casa">
+                    <img src="assets/logo-casa.png" loading="lazy"
+                        alt="Ícone de casa representando instalação residenciais">
                     <h2>Instalação Residencial</h2>
                     <p>Instalação completa de sistemas de gás para residências, incluindo tubulação, reguladores e
                         pontos de consumo.</p>
@@ -104,7 +126,8 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <img src="assets/icon-calculadora.png" alt="icon de calculadora">
+                    <img src="assets/icon-calculadora.png" loading="lazy"
+                        alt="Ícone de calculadora representando sistemas comerciais">
                     <h2>Sistemas Comerciais</h2>
                     <p>Projetos e instalações para restaurantes, padarias, hotéis e estabelecimentos comerciais de
                         grande porte.</p>
@@ -117,7 +140,8 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <img src="assets/iconferramenta.png" alt="icon de ferramenta">
+                    <img src="assets/iconferramenta.png" loading="lazy"
+                        alt="Ícone de ferramenta representando manutenção preventiva">
                     <h2>Manutenção Preventiva</h2>
                     <p>Serviços regulares de manutenção para garantir segurança e eficiência do seu sistema de gás.
                     </p>
@@ -130,7 +154,8 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <img src="assets/icon-inspecao.png" alt="icon de inspecao">
+                    <img src="assets/icon-inspecao.png" loading="lazy"
+                        alt="Ícone representando inspeção e certificações">
                     <h2>Inspeção e Certificação</h2>
                     <p>Laudos técnicos e certificações necessárias para aprovação junto aos órgãos competentes.</p>
                     <span>inclui:</span>
@@ -142,7 +167,8 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <img src="assets/icon-engrenagem.png" alt="icon de engrenagem">
+                    <img src="assets/icon-engrenagem.png" loading="lazy"
+                        alt="Ícone de engrenagem representando conversão de sistemas">
                     <h2>Conversão de Sistemas</h2>
                     <p>Migração de sistemas elétricos para gás ou adequação de instalações existentes.</p>
                     <span>inclui:</span>
@@ -154,7 +180,8 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <img src="assets/atendimento-emergencia.png" alt="icon de atendimento de atendimento">
+                    <img src="assets/atendimento-emergencia.png" loading="lazy"
+                        alt="Ícone representando atendimento 24 horas">
                     <h2>Atendimento de Emergência</h2>
                     <p>Serviço 24 horas para situações de emergência, vazamentos ou problemas urgentes.</p>
                     <span>inclui:</span>
@@ -177,16 +204,25 @@
                     <button class="seta-esquerda">&#10094;</button>
                     <div class="carrossel-container">
                         <figure class="carrossel">
-                            <img src="assets/IMG_20190712_105224846.jpg" alt="pontos de gás restaurante">
-                            <img src="assets/IMG_20191007_110441570.jpg" alt="central para p90">
-                            <img src="assets/img-ponto-gas.jpg" alt="ponto de fogão e aquecedor">
-                            <img src="assets/img-medidores-gas.jpg" alt="medidores de gás">
-                            <img src="assets/IMG-20190129-WA0002.jpg" alt="abrigo para instalação de medidores">
-                            <img src="assets/IMG_20181126_180506597.jpg" alt="cavalete com regulador de gás">
-                            <img src="assets/IMG_20181207_143558589.jpg" alt="central de gás">
-                            <img src="assets/IMG_20190826_125544873.jpg" alt="regulador de gás instacão predial">
-                            <img src="assets/IMG_20250409_153606638.jpg" alt="ponto de do fogão e do aquecedor">
-                            <img src="assets/IMG-20191023-WA0021.jpg" alt="central de gś instação predial">
+                            <img src="assets/IMG_20190712_105224846.jpg" loading="lazy"
+                                alt="Imagem de pontos de gás restaurante">
+                            <img src="assets/IMG_20191007_110441570.jpg" loading="lazy"
+                                alt="Imagem de uma central para p90">
+                            <img src="assets/img-ponto-gas.jpg" loading="lazy"
+                                alt="Imagem de ponto de fogão e aquecedor">
+                            <img src="assets/img-medidores-gas.jpg" loading="lazy" alt="Imagem de medidores de gás">
+                            <img src="assets/IMG-20190129-WA0002.jpg" loading="lazy"
+                                alt="Imagem de um abrigo para instalação de medidores">
+                            <img src="assets/IMG_20181126_180506597.jpg" loading="lazy"
+                                alt="Imagem de um cavalete com regulador de gás">
+                            <img src="assets/IMG_20181207_143558589.jpg" loading="lazy"
+                                alt="Imagem de uma central de gás">
+                            <img src="assets/IMG_20190826_125544873.jpg" loading="lazy"
+                                alt="Imagem de regulador de gás instacão predial">
+                            <img src="assets/IMG_20250409_153606638.jpg" loading="lazy"
+                                alt="Image de ponto de do fogão e do aquecedor de um apartamento">
+                            <img src="assets/IMG-20191023-WA0021.jpg" loading="lazy"
+                                alt="Imagem de central de gś instação predial">
                         </figure>
                     </div>
                     <button class="seta-direita">&#10095;</button>
@@ -226,7 +262,8 @@
             </div>
             <article class="agrupa2cards">
                 <div class="cards-inferiores">
-                    <div><img src="assets/logo-atendimento24hr.png" alt="logo do atendimento 24hr"></div>
+                    <div><img src="assets/logo-atendimento24hr.png" loading="lazy"
+                            alt="logo representando atendimento 24hr"></div>
                     <div class="agrupa-texto">
                         <span>Atendimento 24 Horas</span>
                         <p>Emergências não esperam horário comercial. Estamos disponíveis 24h por dia, 7 dias por semana
@@ -234,7 +271,8 @@
                     </div>
                 </div>
                 <div class="cards-inferiores">
-                    <div><img src="assets/logo-profissionais.png" alt="logo de logo-profissionais"></div>
+                    <div><img src="assets/logo-profissionais.png" loading="lazy"
+                            alt="logo representando equipe especializada"></div>
                     <div class="agrupa-texto">
                         <span>Equipe Especializada</span>
                         <p>Profissionais qualificados e em constante atualização técnica para oferecer sempre o melhor
@@ -250,7 +288,8 @@
                     novo projeto ou layout da casa.</p>
 
                 <div class="caixa-botao-banner">
-                    <a href="https://wa.me/5519994461397" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5519986005315?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento.%20Pode%20me%20passar%20mais%20informações%3F"
+                        target="_blank" rel="noopener noreferrer">
                         <button>Faça um orçamento gratuito</button>
                     </a>
                 </div>
@@ -282,7 +321,8 @@
 
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/5519994461397" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5519986005315?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento.%20Pode%20me%20passar%20mais%20informações%3F"
+                        target="_blank" rel="noopener noreferrer">
 
                         <i class="fab fa-whatsapp"></i>
                     </a>
