@@ -102,26 +102,18 @@ window.addEventListener('resize', () => {
     criarPaginadores();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const icone = document.querySelector(".icone-whats-animado");
 
-window.addEventListener('load', () => {
-    const popup = document.getElementById('mensagem-automatica');
-    const fechar = document.getElementById('fechar-popup');
+    window.addEventListener("scroll", function () {
+        const scrollY = window.scrollY;
 
-    // Mostra o popup após 5 segundos
-    setTimeout(() => {
-        popup.style.display = 'block';
-
-        // E esconde automaticamente depois de mais 5 segundos
-        setTimeout(() => {
-            popup.style.display = 'none';
-        }, 5000);
-
-    }, 5000);
-
-    // Permite fechar manualmente também
-    fechar.addEventListener('click', () => {
-        popup.style.display = 'none';
+        if (scrollY > 100) {
+            icone.classList.add("mostrar");
+            icone.classList.remove("escondido");
+        } else {
+            icone.classList.remove("mostrar");
+            icone.classList.add("escondido");
+        }
     });
 });
-
-

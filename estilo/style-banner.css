@@ -157,14 +157,13 @@ header.topo {
 }
 
 
-.popup-mensagem {
+.icone-whats-animado {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #ffffff;
-    color: #333;
-    padding: 15px 20px;
-    border-radius: 12px;
+    background: transparent;
+    padding: 0;
+    border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     font-family: 'Roboto', sans-serif;
     z-index: 999;
@@ -172,50 +171,10 @@ header.topo {
     animation: fadeIn 1s ease;
 }
 
-.popup-conteudo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    position: relative;
-}
-
-.popup-conteudo img {
+.icone-whats-animado img {
     width: 48px;
     height: 48px;
     animation: pulse 1.5s infinite;
-}
-
-.popup-conteudo p {
-    margin: 0;
-    font-size: 15px;
-}
-
-.popup-conteudo button {
-    background: #25D366;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    margin-top: 8px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.popup-conteudo button:hover {
-    background: #1ebe5d;
-}
-
-#fechar-popup {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #ccc;
-    border-radius: 50%;
-    padding: 4px 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 @keyframes fadeIn {
@@ -243,6 +202,20 @@ header.topo {
         transform: scale(1);
     }
 }
+
+.escondido {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
 
 @media (max-width:480px) {
     .popup-mensagem {
