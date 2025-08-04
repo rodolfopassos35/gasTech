@@ -117,3 +117,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+/* form */
+document.getElementById('btn-whatsapp').addEventListener('click', function () {
+    const nome = document.getElementById('nome').value;
+    const telefone = document.getElementById('telefone').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    const texto = `Olá, meu nome é ${nome}. Telefone: ${telefone}. Mensagem: ${mensagem}`;
+    const numeroWhatsApp = '5519986005315';
+
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+});
+

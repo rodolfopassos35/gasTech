@@ -46,7 +46,7 @@
 }
 
 .agrupa-links-redes-sociais {
-    display: flex;
+    /* display: flex; */
     width: 300px;
     height: 100px;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Título e SEO -->
+    <!-- 🔍 SEO Básico -->
     <title>GasTech | Instalação de Gás Encanado em Campinas e Região</title>
     <meta name="description"
         content="Empresa especializada em gás encanado residencial e comercial em Campinas. Instalação, manutenção e conversão de fogão com segurança e agilidade.">
@@ -15,10 +15,8 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://gastechservicos.com.br/">
 
-    <!-- Favicon -->
-    <link rel="icon" href="https://gastechservicos.com.br/favicon.ico" type="image/x-icon">
 
-    <!-- Open Graph (Facebook, LinkedIn etc.) -->
+    <!-- 📱 Social Media Tags -->
     <meta property="og:title" content="GasTech | Gás Encanado em Campinas e Região">
     <meta property="og:description"
         content="Serviços especializados de instalação e manutenção de gás encanado em Campinas. Solicite seu orçamento!">
@@ -26,12 +24,14 @@
     <meta property="og:url" content="https://gastechservicos.com.br/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="GasTech | Soluções em Gás para Campinas">
     <meta name="twitter:description"
         content="Instalação e manutenção de gás encanado com segurança em Campinas e cidades vizinhas.">
     <meta name="twitter:image" content="https://gastechservicos.com.br/assets/banner-metas-tags.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://gastechservicos.com.br/favicon.ico" type="image/x-icon">
 
     <!-- Estilos -->
     <link rel="stylesheet" href="estilo/style-banner.css">
@@ -39,9 +39,16 @@
     <link rel="stylesheet" href="estilo/style.diferenciais.css">
     <link rel="stylesheet" href="estilo/style-footer.css">
     <link rel="stylesheet" href="estilo/contato.css">
+    <link rel="stylesheet" href="estilo/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Scripts -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X987YBY1V"></script>
+    <script src="js/analytics.js"></script>
+
+    <!-- Scripts personalizados -->
     <script src="js/script.js" defer></script>
 </head>
 
@@ -61,8 +68,10 @@
             </div>
             <div class="links-topo">
                 <nav>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/gastechservicos?utm_source=ig_web_button_share_sheet&igsh=b2czbGRwbGs5cjBw"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61579017479068" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
                     <a href="https://wa.me/5519986005315?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento.%20Pode%20me%20passar%20mais%20informações%3F"
                         target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i>
@@ -75,7 +84,7 @@
                 <nav>
                     <a href="#servicos">Serviços</a>
                     <a href="#diferenciais">Diferenciais</a>
-                    <a href="#contatos">Contatos</a>
+                    <a href="#contato">Contatos</a>
                 </nav>
             </div>
             <h1>Instalação e Manutenção de Gás com Segurança</h1>
@@ -273,19 +282,31 @@
             </article>
         </section>
         <section class="contato" id="contato">
+
             <div class="conteudo-contato">
                 <h5>Contrate os profissionais da GásTech?</h5>
                 <p>Solicite remanejamento de pontos de gás existentes que não são mais adequados para as necessidades do
                     novo projeto ou layout da casa.</p>
 
-                <div class="caixa-botao-banner">
-                    <a href="https://wa.me/5519986005315?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento.%20Pode%20me%20passar%20mais%20informações%3F"
-                        target="_blank" rel="noopener noreferrer">
-                        <button>Faça um orçamento gratuito</button>
-                    </a>
-                </div>
-            </div>
-        </section>
+                <form id="form-contato" action="https://formspree.io/f/xldlwevd" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+
+                    <div class="botoes-contato">
+                        <button type="button" id="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </button>
+                        <button type="submit">
+                            <i class="fas fa-envelope"></i> E-mail
+                        </button>
+                    </div>
+                </form>
     </main>
     <footer class="roda-pe">
         <div class="conteudo-roda-pe">
@@ -302,16 +323,19 @@
                         <li><a href="#home" class="home">Home</a></li>
                         <li><a href="#servicos" class="servicos">Serviços</a></li>
                         <li><a href="#diferenciais" class="diferenciais">Diferenciais</a></li>
-                        <li><a href="#contatos" class="contato">Contatos</a></li>
+                        <li><a href="#contato" class="contato">Contatos</a></li>
                     </ul>
 
                 </nav>
             </div>
-            <div class="agrupa-links-redes-sociais" id="contatos">
+            <div class="agrupa-links-redes-sociais">
                 <nav class="redes-sociais-roda-pe">
 
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a
+                        href="https://www.instagram.com/gastechservicos?utm_source=ig_web_button_share_sheet&igsh=b2czbGRwbGs5cjBw"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61579017479068"><i
+                            class="fab fa-facebook-f"></i></a>
                     <a href="https://wa.me/5519986005315?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento.%20Pode%20me%20passar%20mais%20informações%3F"
                         target="_blank" rel="noopener noreferrer">
 
