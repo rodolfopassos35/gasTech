@@ -4,7 +4,7 @@
     background-color: #fff;
 }
 
-.secao-servicos h1 {
+.secao-servicos h2 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     text-align: center;
     margin: 60px auto 25px auto;
@@ -47,18 +47,16 @@ b {
     transition: all 0.5s ease-in-out;
 }
 
-/* Quando o mouse estiver sobre o .card */
 .card:hover {
     box-shadow: 1px 10px 20px 5px #d4cfcf;
     background-color: rgba(229, 238, 238, 0.342);
 }
 
-
 .card:hover img {
     transform: scale(1.05);
 }
 
-.card h2 {
+.card h3 {
     font-size: 1.3rem;
     margin: 10px;
 }
@@ -123,6 +121,7 @@ b {
     margin: 5rem auto;
     gap: 5px;
 }
+
 
 .carrossel-wrapper {
     position: relative;

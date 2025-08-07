@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .roda-pe {
     background-color: #000;
     padding: 30px 15px;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .conteudo-roda-pe {
@@ -46,20 +49,23 @@
 }
 
 .agrupa-links-redes-sociais {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 300px;
-    height: 100px;
+    height: 150px;
 }
 
 .redes-sociais-roda-pe {
     display: flex;
-    gap: 20px;
     align-items: center;
-
+    gap: 20px;
+    height: 40px;
 }
 
 .redes-sociais-roda-pe a i {
-    margin-left: 50px;
+    padding-left: 4.1rem;
+
 }
 
 .redes-sociais-roda-pe a {
@@ -74,6 +80,33 @@
 
 .redes-sociais-roda-pe i:hover {
     color: #0d3ca0;
+}
+
+.footer-email {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+.footer-email a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-email a:hover {
+    opacity: 1;
+}
+
+.footer-email i {
+    font-size: 16px;
+    color: #ffffff;
 }
 
 .ecopy {

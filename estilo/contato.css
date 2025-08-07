@@ -1,6 +1,6 @@
 .contato {
     height: auto;
-    background: url('../assets/gas-9426301_640.jpg');
+    background: url('../assets/imagem-fogao.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.conteudo-contato h5 {
+.conteudo-contato h2 {
     color: #fff;
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-top: 4rem;

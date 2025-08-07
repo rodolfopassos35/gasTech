@@ -32,6 +32,34 @@
     outline: none;
 }
 
+#form-contato label.consentimento {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+label.consentimento input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+label.consentimento span {
+    line-height: 1.4;
+    display: inline;
+    white-space: nowrap;
+    height: auto;
+}
+
+label.consentimento a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
 /* Botões */
 .botoes-contato {
     display: flex;
@@ -82,6 +110,18 @@
 
 @media (max-width:480px) {
     #form-contato {
-        width: max-content;
+        width: 90%;
+    }
+
+    #form-contato,
+    label.consentimento {
+        align-items: flex-start;
+    }
+
+    label.consentimento span {
+        width: 300px;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 0.8rem;
     }
 }
