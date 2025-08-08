@@ -1,0 +1,230 @@
+.secao-servicos {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+}
+
+.secao-servicos h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    margin: 60px auto 25px auto;
+}
+
+.secao-servicos p {
+    max-width: 800px;
+}
+
+
+.paragrafo-destaque {
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(90, 88, 88);
+}
+
+b {
+    color: rgb(52, 114, 206);
+}
+
+.caixa-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.card {
+    cursor: pointer;
+    height: 420px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 1px 10px 20px 5px #d4cfcf;
+    background-color: rgba(229, 238, 238, 0.342);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: rgb(90, 88, 88);
+    margin: 0 10px 15px;
+}
+
+.card span {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.card ul {
+    padding-left: 5px;
+    margin: 0;
+    list-style-position: inside;
+    box-sizing: border-box;
+}
+
+.card li {
+    margin: 10px;
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+}
+
+.nossos-servicos-fundo-preto {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+
+.nossos-servicos-fundo-preto h3 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 5rem auto 1rem;
+}
+
+.nossos-servicos-fundo-preto p {
+    text-align: center;
+    color: #fff;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.conteudo-fundo-preto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.conteudo-fundo-preto figure {
+    width: 100%;
+    height: auto;
+    margin: 5rem auto;
+    gap: 5px;
+}
+
+
+.carrossel-wrapper {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.carrossel-container {
+    overflow: hidden;
+    touch-action: pan-y;
+    width: 99%;
+    margin: 0 auto;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carrossel img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    margin: 0 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrossel img:hover {
+    transform: scale(1.05);
+}
+
+.seta-esquerda,
+.seta-direita {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.seta-esquerda:hover,
+.seta-direita:hover {
+    background: #ffc107;
+}
+
+.seta-esquerda {
+    left: 10px;
+}
+
+.seta-direita {
+    right: 10px;
+}
+
+.paginadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    display: none;
+}
+
+.paginador {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.paginador.ativo {
+    background-color: #ffc107;
+}
+
+@media (max-width: 900px) {
+    .caixa-cards {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colunas */
+    }
+}
+
+@media (max-width: 600px) {
+    .caixa-cards {
+        grid-template-columns: 1fr;
+        /* 1 coluna */
+    }
+
+    .carrossel img {
+        max-width: 80vw;
+        height: 250px;
+    }
+
+    .paginadores {
+        display: flex;
+    }
+}
