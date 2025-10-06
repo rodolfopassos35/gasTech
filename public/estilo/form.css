@@ -2,9 +2,11 @@
     width: 800px;
     margin: 20px auto 50px;
     padding: 30px;
-    background: #ffffff86;
+    background: #ffffffa1;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
 }
 
 /* Títulos e labels */
@@ -24,6 +26,8 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     transition: border-color 0.3s ease;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 255, 0.555);
+    background-color: #ffffffa1;
 }
 
 #form-contato input:focus,

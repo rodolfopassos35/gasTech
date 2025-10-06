@@ -8,6 +8,7 @@
     font-size: clamp(2rem, 5vw, 3.5rem);
     text-align: center;
     margin: 60px auto 25px auto;
+    z-index: 3;
 }
 
 .secao-servicos p {
@@ -88,7 +89,25 @@ b {
 .nossos-servicos-fundo-preto {
     width: 100%;
     height: auto;
-    background-color: #000;
+    /* background-color: #000; */
+    background: url('../assets/imagem-fogao.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.nossos-servicos-fundo-preto::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.753);
+    z-index: 1;
+}
+
+.nossos-servicos-fundo-preto {
+    position: relative;
+    z-index: 2;
 }
 
 .nossos-servicos-fundo-preto h3 {
@@ -97,6 +116,8 @@ b {
     text-align: center;
     width: 100%;
     margin: 5rem auto 1rem;
+    z-index: 3;
+    position: relative;
 }
 
 .nossos-servicos-fundo-preto p {
@@ -105,7 +126,8 @@ b {
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     max-width: 100%;
     margin: 0 auto;
-
+    z-index: 3;
+    position: relative;
 }
 
 .conteudo-fundo-preto {
@@ -124,6 +146,7 @@ b {
 
 
 .carrossel-wrapper {
+    z-index: 3;
     position: relative;
     max-width: 100%;
     overflow: hidden;
