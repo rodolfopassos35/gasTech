@@ -40,12 +40,12 @@ b {
 }
 
 .card {
-    cursor: pointer;
-    height: 420px;
+    height: 400px;
     max-width: 400px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
+    border: 1px solid rgba(119, 117, 117, 0.39);
 }
 
 .card:hover {
