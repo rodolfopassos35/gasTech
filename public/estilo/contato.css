@@ -1,6 +1,7 @@
 .contato {
     height: auto;
-    background: url('../assets/banner-metas-tags.webp');
+    width: 100%;
+    background-image: url('../assets/imagem-logo1.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,8 +13,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.685);
-    /* escurece o fundo */
+    background-color: rgba(0, 0, 0, 0.466);
     z-index: 1;
 }
 
