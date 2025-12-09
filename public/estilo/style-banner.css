@@ -188,7 +188,7 @@ header.topo {
 
 .icone-whats-animado {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     background: transparent;
     padding: 0;
@@ -245,6 +245,11 @@ header.topo {
     pointer-events: auto;
 }
 
+@media (max-width:375px) {
+    .links-banner nav {
+        padding-top: 50px;
+    }
+}
 
 @media (max-width:480px) {
     .popup-mensagem {
